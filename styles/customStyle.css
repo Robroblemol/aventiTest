@@ -304,14 +304,14 @@ body {
     .container-form{
       grid-template-columns: 100%;
       gap: 0em;
+      grid-column-gap: 1em;
+      grid-template-rows: minmax(2em,auto);
+      padding: 1em;
     }
     .nested-container-form{
       grid-template-columns: 100%;
     }  
     .container-bg-image {
-
-      grid-template-columns: 100%;
-      
-      
+      grid-template-columns: 100%;    
     } 
 }
