@@ -22,7 +22,7 @@ footer {
     padding: .25rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background-color: orange;
+    background-color:#ffa50008;
     border: 1px solid transparent;
     border-radius: .25rem;
 }
@@ -115,24 +115,29 @@ body {
     /* width: 75% */
   }
 
-.row {
-    display: -ms-flexbox; 
-    display: flex;
-    -ms-flex-wrap: wrap; 
-    flex-wrap: wrap;
-    padding: 0 4px;
+.container-services {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  align-content: center;
+  
   }
-  .column {
-    -ms-flex: 25%; 
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-    
+  .item-services {
+    display: grid;
+    margin:10px auto;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center;  */
   } 
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+  .item-services img {
+    width: 125px; height: 125px;
+  }
+  .item-services P {
+    margin-top: 0%; 
+    color: gray;
+    margin-left: 1em;
+    text-align: center;
+    width: 6em;
+    height: 2em;
   }
 
   .custom-button{
@@ -198,22 +203,6 @@ body {
     grid-gap: 1em;
 
   }
-
-  .col-right {
-    float: right;
-    margin-top: 3px;
-  }
-  
-  .col-left  {
-    display: flex;
-    margin-top: 3px;
-    align-items: left;
-  }
-  /* label {
-    padding: 1px 1px 1px 0;
-    display: inline;
-    color: gray;
-  } */
 
 .container-form label {
   margin: 1px 1px 1px 0;
@@ -314,4 +303,8 @@ body {
     .container-bg-image {
       grid-template-columns: 100%;    
     } 
+    .container-services {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      }
 }
