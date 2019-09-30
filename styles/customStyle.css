@@ -158,6 +158,7 @@ body {
 
   .container {
     display: flex;
+    padding: 5%;
     /* flex-direction: row; */
     justify-content: center;  
     align-items:center;
@@ -171,6 +172,12 @@ body {
     padding: 20px;
     
   } 
+
+  .item img{
+    margin: 0;
+    width: 125%;
+    height: 125%;
+  }
 
   .big-font {
     font-size: 500%;
@@ -306,5 +313,10 @@ body {
     .container-services {
       display: grid;
       grid-template-columns: repeat(2,1fr);
+      }
+      .item img{
+        margin: 0;
+        width: 100%;
+        height: 100%;
       }
 }
