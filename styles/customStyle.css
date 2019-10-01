@@ -1,6 +1,3 @@
-.bg-white {
-    background-color: #ffffff;
-}
 .bg-orange {
   background-color: #fe7300;
 }
@@ -42,18 +39,41 @@ body {
     height: 30px;
   }
   .bg-image {
-    background: url("../assets/06/SeccionMagento-03-1024x396.png") no-repeat fixed center;
+    background: url("../assets/06/SeccionMagento-03-1024x396.png") no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
     width: 100% ;
-    padding: 50px;
     text-align: center;
+    color: white;
 }
+.bg-image h1{
+  text-align: center;
+  padding-top: 2em;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+.bg-image img {
+  height: 30%;
+  width: 30%;
+  padding-bottom: 4em;
+}
+.bg-image hr{ 
+  border-top: 1px solid rgb(255, 255, 255);
+  width: 50%;
+}
+.bg-image p {
+  font-size: 175%;
+  padding-top: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 1em;
+}
+
 .bg-image-caso {
-    background: url("../assets/06/SeccionMagento-14-1024x378.png") no-repeat fixed center;
+    background: url("../assets/06/SeccionMagento-14-1024x378.png") no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -63,27 +83,98 @@ body {
     padding: 50px;
     text-align: center;
 }
+.bg-image-caso img {
+    height: 25%;
+    width: 25%;
+    padding-top: 4em;
+  
+}
+.bg-image-caso p {
+  color: white;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 5em;
+  padding-left: 14em;
+  padding-right: 14em;
+}
+.bg-image-caso button{
+  
+  background-color: #fe720000;;
+  color: #ffffff;
+  border: 1px solid #ece6e1;
+  border-radius: 0px;
+  cursor: pointer;
+  width: 15%;
+  height: 2.7em;
+
+}
+.bg-image-caso button:hover{
+  color: #fe7300;
+  background-color: #ffffff;
+}
+
 .bg-image-cell {
-  background: url("../assets/06/SeccionMagento-19-300x200.png") no-repeat fixed center;
-  /* -webkit-background-size: cover; */
-  /* -moz-background-size: cover; */
-  /* -o-background-size: cover; */
+  background: url("../assets/06/SeccionMagento-19-768x512.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; 
   height: 100%;
   width: 100% ;
-  padding: 20%;
-  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 .bg-image-hand {
-  background: url("../assets/06/SeccionMagento-18-300x200.png") no-repeat fixed center;
-  /* -webkit-background-size: cover; */
-  /* -moz-background-size: cover; */
-  /* -o-background-size: cover; */
-  background-size: cover; 
+  background: url("../assets/06/SeccionMagento-18-768x512.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
   height: 100%;
   width: 100% ;
-  padding:20%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.container-two-bg-image{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: minmax(2em,auto); 
+}
+.container-two-bg-image h1{
+  color: white;
   text-align: center;
+  font-size: 350%
+}
+.container-two-bg-image p{
+  color: white;
+  text-align: left;
+  
+}
+.container-two-bg-image hr{
+  border-top: 1px solid rgb(255, 255, 255);
+  width: 100%;
+  
+}
+.container-bg-image {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: minmax(2em,auto); 
+}
+.title-services{
+  color: gray;
+  text-align: center;
+}
+.title-services h4 {
+  padding-top: 2em;
+  font-size: 40; 
+}
+.title-services hr {
+  border-top: 1px solid gray;
+  width: 35%;
 }
 .vl-orange {
     border-top: 1px solid #fe7300;
@@ -140,22 +231,6 @@ body {
     height: 2em;
   }
 
-  .custom-button{
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 100;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #fe7300;
-    border-radius: 2px;
-    border: 1px solid #fe7300;
-
-  }
-  .custom-button:hover{
-    color: #fe7300;
-    background-color: #ffffff;
-  }
-
   .container {
     display: flex;
     padding: 5%;
@@ -182,18 +257,7 @@ body {
   .big-font {
     font-size: 500%;
   }
-  .container-bg-image {
-    /* flex-direction: column; */
-    display: grid;
-    grid-template-columns: 50% 50%;
-    /* grid-column-gap: 10em; */
-    grid-template-rows: minmax(2em,auto);
-    /* padding: em; */
-    /* align-items: left; */
-    /* align-content: flex-start;  */
-  }
-
-
+  
   .container-form {
     /* flex-direction: column; */
     display: grid;
@@ -266,28 +330,50 @@ body {
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 
-  /* @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 25%;
-      flex:25%;
-      max-width: 25%;
-      flex-flow: column;
+  @media screen and (max-width: 800px) {
+    .bg-image h1{
+      text-align: center;
+      padding-top: 1em;
+      padding-left: 0em;
+      padding-right: 0em;
     }
-    .form-inline input {
-      margin: 10px 0;
+    .bg-image img {
+      height: 40%;
+      width: 40%;
+      padding-bottom: 4em;
     }
+    .bg-image-cell {
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+    .bg-image-hand {
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+    .container-two-bg-image h1{
+      color: white;
+      text-align: center;
+      font-size: 250%
+    }
+    /* .bg-image-caso p {
+      color: white;
+      text-align: center;
+      font-size: 100%;
+    } */
+    .bg-image-caso {
+      background: url("../assets/06/SeccionMagento-14-150x150.png") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+      width: 100% ;
+      padding: 1em;
+      text-align: center;
+  }
     
-    .form-inline {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .col-left{
-      flex-direction: column;
-    }
-    .col-right {
-      flex-direction: column;
-    }
-  } */
+  }
+
   @media screen and (max-width: 600px) {
     .column {
       -ms-flex: 100%;
@@ -319,4 +405,60 @@ body {
         width: 100%;
         height: 100%;
       }
+      .bg-image {
+        background: url("../assets/06/SeccionMagento-03-150x150.png") no-repeat fixed center;
+        background-size: cover;
+      }
+      .bg-image-caso{
+        background: url("../assets/06/SeccionMagento-14-150x150.png") no-repeat fixed center;
+        background-size: cover; 
+      }
+      .bg-image h1{
+        text-align: center;
+        font-size: 135%;
+        padding-top: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+      .bg-image p {
+        font-size: 100%;
+        padding-top: 1em;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 1em;
+      }
+      .bg-image img {
+        height: 50%;
+        width: 50%;
+        padding-bottom: 2em;
+      }
+      .container-two-bg-image{
+        grid-template-columns: 100%;
+      }
+      .bg-image-caso img {
+        height: 100%;
+        width: 100%;
+        padding-top: 4em;
+      
+    }
+    .bg-image-caso p {
+      color: white;
+      text-align: center;
+      padding-top: 2em;
+      padding-bottom: 2.5em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .bg-image-caso button{
+      text-decoration: none;
+      font-weight: 100;
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #fe720000;
+      border-radius: 2px;
+      border: 1px solid #ece6e1;
+      width: 55%;
+    
+    }
+    
 }
