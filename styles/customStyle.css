@@ -492,4 +492,7 @@ body {
       
     
     }
+    .vl {
+      height: 0px;
+    }
 }
